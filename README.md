@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/previewcardcomponent-site-using-react-cssgrid-and-flexbox-I4y6gM-0L)
+- Live Site URL: [Preview Card-Component](https://preview-card-component1201.netlify.app/)
 
 <br>
 
