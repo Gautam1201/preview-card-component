@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.app{
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0 25px;
+    display: grid;
+    place-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+
+.card-comp{
+    padding: 50px 32px;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 25px;
+    width: 80%;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.card-comp:first-child{
+    border-radius: 10px 10px 0 0;
+}
+
+.card-comp:last-child{
+    border-radius: 0 0 10px 10px;
+}
+
+.card-comp > h1{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.card-comp > button{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    transition: 0.3s background-color, 0.3s color 0.2s;
+}
+
+
+.card-comp > button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%)!important;
+}
+
+.attribution { 
+    font-size: 12px;
+    text-align: center; 
+    color: hsl(184, 100%, 22%); 
+    margin: 25px
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 950px) {
+
+    .card{
+        flex-direction: row;
+    }
+
+    .card-comp{
+        justify-content: center;
+        width: 275px;
+        min-width: auto;
+    }
+
+    .card-comp:first-child{
+        border-radius: 10px 0 0 10px;
+    }
+    .card-comp:last-child{
+        border-radius: 0 10px 10px 0;
+    }
+}
